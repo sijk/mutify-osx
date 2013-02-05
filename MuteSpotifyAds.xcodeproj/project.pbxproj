@@ -1,0 +1,247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4C1615916C1C9D600731ACB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C1615816C1C9D600731ACB /* Foundation.framework */; };
+		F4C1615C16C1C9D600731ACB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1615B16C1C9D600731ACB /* main.m */; };
+		F4C1616016C1C9D600731ACB /* MuteSpotifyAds.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F4C1615F16C1C9D600731ACB /* MuteSpotifyAds.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4C1615316C1C9D600731ACB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				F4C1616016C1C9D600731ACB /* MuteSpotifyAds.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F4C1615516C1C9D600731ACB /* MuteSpotifyAds */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MuteSpotifyAds; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C1615816C1C9D600731ACB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4C1615B16C1C9D600731ACB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4C1615E16C1C9D600731ACB /* MuteSpotifyAds-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MuteSpotifyAds-Prefix.pch"; sourceTree = "<group>"; };
+		F4C1615F16C1C9D600731ACB /* MuteSpotifyAds.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MuteSpotifyAds.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4C1615216C1C9D600731ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C1615916C1C9D600731ACB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4C1614C16C1C9D600731ACB = {
+			isa = PBXGroup;
+			children = (
+				F4C1615A16C1C9D600731ACB /* MuteSpotifyAds */,
+				F4C1615716C1C9D600731ACB /* Frameworks */,
+				F4C1615616C1C9D600731ACB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4C1615616C1C9D600731ACB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1615516C1C9D600731ACB /* MuteSpotifyAds */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4C1615716C1C9D600731ACB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1615816C1C9D600731ACB /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4C1615A16C1C9D600731ACB /* MuteSpotifyAds */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1615B16C1C9D600731ACB /* main.m */,
+				F4C1615F16C1C9D600731ACB /* MuteSpotifyAds.1 */,
+				F4C1615D16C1C9D600731ACB /* Supporting Files */,
+			);
+			path = MuteSpotifyAds;
+			sourceTree = "<group>";
+		};
+		F4C1615D16C1C9D600731ACB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1615E16C1C9D600731ACB /* MuteSpotifyAds-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4C1615416C1C9D600731ACB /* MuteSpotifyAds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C1616316C1C9D600731ACB /* Build configuration list for PBXNativeTarget "MuteSpotifyAds" */;
+			buildPhases = (
+				F4C1615116C1C9D600731ACB /* Sources */,
+				F4C1615216C1C9D600731ACB /* Frameworks */,
+				F4C1615316C1C9D600731ACB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuteSpotifyAds;
+			productName = MuteSpotifyAds;
+			productReference = F4C1615516C1C9D600731ACB /* MuteSpotifyAds */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4C1614D16C1C9D600731ACB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Simon Knopp";
+			};
+			buildConfigurationList = F4C1615016C1C9D600731ACB /* Build configuration list for PBXProject "MuteSpotifyAds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4C1614C16C1C9D600731ACB;
+			productRefGroup = F4C1615616C1C9D600731ACB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4C1615416C1C9D600731ACB /* MuteSpotifyAds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4C1615116C1C9D600731ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C1615C16C1C9D600731ACB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F4C1616116C1C9D600731ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F4C1616216C1C9D600731ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F4C1616416C1C9D600731ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MuteSpotifyAds/MuteSpotifyAds-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F4C1616516C1C9D600731ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MuteSpotifyAds/MuteSpotifyAds-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4C1615016C1C9D600731ACB /* Build configuration list for PBXProject "MuteSpotifyAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C1616116C1C9D600731ACB /* Debug */,
+				F4C1616216C1C9D600731ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C1616316C1C9D600731ACB /* Build configuration list for PBXNativeTarget "MuteSpotifyAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C1616416C1C9D600731ACB /* Debug */,
+				F4C1616516C1C9D600731ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4C1614D16C1C9D600731ACB /* Project object */;
+}
