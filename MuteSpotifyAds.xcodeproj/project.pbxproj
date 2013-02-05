@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F4C1615916C1C9D600731ACB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C1615816C1C9D600731ACB /* Foundation.framework */; };
 		F4C1615C16C1C9D600731ACB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1615B16C1C9D600731ACB /* main.m */; };
+		F4C1616816C1CFED00731ACB /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C1616716C1CFED00731ACB /* ScriptingBridge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		F4C1615816C1C9D600731ACB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F4C1615B16C1C9D600731ACB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4C1615E16C1C9D600731ACB /* MuteSpotifyAds-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MuteSpotifyAds-Prefix.pch"; sourceTree = "<group>"; };
+		F4C1616616C1CFA200731ACB /* Spotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spotify.h; sourceTree = "<group>"; };
+		F4C1616716C1CFED00731ACB /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = /System/Library/Frameworks/ScriptingBridge.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C1615916C1C9D600731ACB /* Foundation.framework in Frameworks */,
+				F4C1616816C1CFED00731ACB /* ScriptingBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C1615816C1C9D600731ACB /* Foundation.framework */,
+				F4C1616716C1CFED00731ACB /* ScriptingBridge.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -71,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C1615B16C1C9D600731ACB /* main.m */,
+				F4C1616616C1CFA200731ACB /* Spotify.h */,
 				F4C1615D16C1C9D600731ACB /* Supporting Files */,
 			);
 			path = MuteSpotifyAds;

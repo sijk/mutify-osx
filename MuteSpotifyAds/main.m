@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Spotify.h"
 
 
-@interface SpotifyObserver : NSObject
+@interface SpotifyObserver : NSObject {
+    SpotifyApplication *spotify;
+    NSInteger volume;
+}
 
 - (void)observeStateChange:(NSNotification *)note;
 
@@ -26,6 +30,9 @@
                selector:@selector(observeStateChange:)
                    name:@"com.spotify.client.PlaybackStateChanged"
                  object:nil];
+        
+        spotify = [SBApplication applicationWithBundleIdentifier:@"com.spotify.client"];
+        volume = (spotify.isRunning) ? spotify.soundVolume : -1;
     }
     return self;
 }
@@ -38,6 +45,14 @@
 
 - (void)observeStateChange:(NSNotification *)note
 {
+    if ([[note.userInfo valueForKey:@"Player State"] isEqualToString:@"Stopped"]) {
+        // This notification occurs when Spotify is launched or quit.
+        // Use it to get the initial volume in case Spotify wasn't running when
+        // this program was launched.
+        volume = spotify.soundVolume;
+        return;
+    }
+    
     NSString *album  =  [note.userInfo valueForKey:@"Album"];
     int discNum  = (int)[note.userInfo valueForKey:@"Disc Number"];
     int trackNum = (int)[note.userInfo valueForKey:@"Track Number"];
@@ -60,7 +75,13 @@
     
     if (isAd) {
         NSLog(@"Hah! Caught an ad.");
-        // Mute spotify...
+        // Mute Spotify if it isn't already muted
+        if (spotify.soundVolume > 0) {
+            volume = spotify.soundVolume;
+            spotify.soundVolume = 0;
+        }
+    } else {
+        spotify.soundVolume = volume;
     }
 }
 
