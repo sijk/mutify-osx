@@ -25,13 +25,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F4C1615516C1C9D600731ACB /* MuteSpotifyAds */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MuteSpotifyAds; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C1615516C1C9D600731ACB /* Mutify */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mutify; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C1615816C1C9D600731ACB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F4C1615B16C1C9D600731ACB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F4C1615E16C1C9D600731ACB /* MuteSpotifyAds-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MuteSpotifyAds-Prefix.pch"; sourceTree = "<group>"; };
+		F4C1615E16C1C9D600731ACB /* Mutify-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mutify-Prefix.pch"; sourceTree = "<group>"; };
 		F4C1616616C1CFA200731ACB /* Spotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spotify.h; sourceTree = "<group>"; };
 		F4C1616716C1CFED00731ACB /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = /System/Library/Frameworks/ScriptingBridge.framework; sourceTree = "<absolute>"; };
-		F4C1616916C1D35300731ACB /* com.github.sijk.MuteSpotifyAds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.github.sijk.MuteSpotifyAds.plist; sourceTree = "<group>"; };
+		F4C1616916C1D35300731ACB /* com.github.sijk.Mutify.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.github.sijk.Mutify.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 		F4C1614C16C1C9D600731ACB = {
 			isa = PBXGroup;
 			children = (
-				F4C1615A16C1C9D600731ACB /* MuteSpotifyAds */,
+				F4C1615A16C1C9D600731ACB /* Mutify */,
 				F4C1615716C1C9D600731ACB /* Frameworks */,
 				F4C1615616C1C9D600731ACB /* Products */,
 			);
@@ -59,7 +59,7 @@
 		F4C1615616C1C9D600731ACB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4C1615516C1C9D600731ACB /* MuteSpotifyAds */,
+				F4C1615516C1C9D600731ACB /* Mutify */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,21 +73,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F4C1615A16C1C9D600731ACB /* MuteSpotifyAds */ = {
+		F4C1615A16C1C9D600731ACB /* Mutify */ = {
 			isa = PBXGroup;
 			children = (
 				F4C1615B16C1C9D600731ACB /* main.m */,
-				F4C1616916C1D35300731ACB /* com.github.sijk.MuteSpotifyAds.plist */,
+				F4C1616916C1D35300731ACB /* com.github.sijk.Mutify.plist */,
 				F4C1616616C1CFA200731ACB /* Spotify.h */,
 				F4C1615D16C1C9D600731ACB /* Supporting Files */,
 			);
-			path = MuteSpotifyAds;
+			path = Mutify;
 			sourceTree = "<group>";
 		};
 		F4C1615D16C1C9D600731ACB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F4C1615E16C1C9D600731ACB /* MuteSpotifyAds-Prefix.pch */,
+				F4C1615E16C1C9D600731ACB /* Mutify-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F4C1615416C1C9D600731ACB /* MuteSpotifyAds */ = {
+		F4C1615416C1C9D600731ACB /* Mutify */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4C1616316C1C9D600731ACB /* Build configuration list for PBXNativeTarget "MuteSpotifyAds" */;
+			buildConfigurationList = F4C1616316C1C9D600731ACB /* Build configuration list for PBXNativeTarget "Mutify" */;
 			buildPhases = (
 				F4C1615116C1C9D600731ACB /* Sources */,
 				F4C1615216C1C9D600731ACB /* Frameworks */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = MuteSpotifyAds;
-			productName = MuteSpotifyAds;
-			productReference = F4C1615516C1C9D600731ACB /* MuteSpotifyAds */;
+			name = Mutify;
+			productName = Mutify;
+			productReference = F4C1615516C1C9D600731ACB /* Mutify */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +121,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Simon Knopp";
 			};
-			buildConfigurationList = F4C1615016C1C9D600731ACB /* Build configuration list for PBXProject "MuteSpotifyAds" */;
+			buildConfigurationList = F4C1615016C1C9D600731ACB /* Build configuration list for PBXProject "Mutify" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -133,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F4C1615416C1C9D600731ACB /* MuteSpotifyAds */,
+				F4C1615416C1C9D600731ACB /* Mutify */,
 			);
 		};
 /* End PBXProject section */
@@ -211,7 +211,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MuteSpotifyAds/MuteSpotifyAds-Prefix.pch";
+				GCC_PREFIX_HEADER = "Mutify/Mutify-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -220,7 +220,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MuteSpotifyAds/MuteSpotifyAds-Prefix.pch";
+				GCC_PREFIX_HEADER = "Mutify/Mutify-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -228,7 +228,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F4C1615016C1C9D600731ACB /* Build configuration list for PBXProject "MuteSpotifyAds" */ = {
+		F4C1615016C1C9D600731ACB /* Build configuration list for PBXProject "Mutify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4C1616116C1C9D600731ACB /* Debug */,
@@ -237,7 +237,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4C1616316C1C9D600731ACB /* Build configuration list for PBXNativeTarget "MuteSpotifyAds" */ = {
+		F4C1616316C1C9D600731ACB /* Build configuration list for PBXNativeTarget "Mutify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4C1616416C1C9D600731ACB /* Debug */,

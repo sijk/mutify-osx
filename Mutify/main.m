@@ -1,6 +1,6 @@
 //
 //  main.m
-//  MuteSpotifyAds
+//  Mutify
 //
 //  Created by Simon Knopp on 6/02/13.
 //  Copyright (c) 2013 Simon Knopp. All rights reserved.
@@ -30,7 +30,7 @@
                selector:@selector(observeStateChange:)
                    name:@"com.spotify.client.PlaybackStateChanged"
                  object:nil];
-        
+
         spotify = [SBApplication applicationWithBundleIdentifier:@"com.spotify.client"];
         volume = (spotify.isRunning) ? spotify.soundVolume : -1;
     }
@@ -52,13 +52,13 @@
         volume = spotify.soundVolume;
         return;
     }
-    
+
     NSString *album  =  [note.userInfo valueForKey:@"Album"];
     int discNum  = (int)[note.userInfo valueForKey:@"Disc Number"];
     int trackNum = (int)[note.userInfo valueForKey:@"Track Number"];
-    
+
     NSLog(@"Got notification: %@", note.userInfo);
-    
+
     bool isAd = NO;
     if ([album hasPrefix:@"http"]) {
         isAd = YES;
@@ -72,7 +72,7 @@
         isAd = YES;
         NSLog(@"Track and disc numbers = 0");
     }
-    
+
     if (isAd) {
         NSLog(@"Hah! Caught an ad.");
         // Mute Spotify if it isn't already muted

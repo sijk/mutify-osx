@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.github.sijk.MuteSpotifyAds</string>
+	<string>com.github.sijk.Mutify</string>
 	<key>Program</key>
-	<string>/usr/local/bin/MuteSpotifyAds</string>
+	<string>/usr/local/bin/Mutify</string>
 	<key>KeepAlive</key>
 	<true/>
 </dict>
