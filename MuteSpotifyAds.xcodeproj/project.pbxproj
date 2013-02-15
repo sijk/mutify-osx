@@ -31,6 +31,7 @@
 		F4C1615E16C1C9D600731ACB /* MuteSpotifyAds-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MuteSpotifyAds-Prefix.pch"; sourceTree = "<group>"; };
 		F4C1616616C1CFA200731ACB /* Spotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spotify.h; sourceTree = "<group>"; };
 		F4C1616716C1CFED00731ACB /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = /System/Library/Frameworks/ScriptingBridge.framework; sourceTree = "<absolute>"; };
+		F4C1616916C1D35300731ACB /* com.github.sijk.MuteSpotifyAds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.github.sijk.MuteSpotifyAds.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C1615B16C1C9D600731ACB /* main.m */,
+				F4C1616916C1D35300731ACB /* com.github.sijk.MuteSpotifyAds.plist */,
 				F4C1616616C1CFA200731ACB /* Spotify.h */,
 				F4C1615D16C1C9D600731ACB /* Supporting Files */,
 			);
