@@ -6,9 +6,11 @@ PROJECT=`xcodebuild -showBuildSettings | awk '/PROJECT =/ {print $3}'`
 PACKROOT=build/package
 EXECROOT=$PACKROOT/exec
 SCRIPTDIR=$PACKROOT/scripts
+DISTDIR=dist
 
 mkdir -p $EXECROOT
 mkdir -p $SCRIPTDIR
+mkdir -p $DISTDIR
 
 xcodebuild DSTROOT=$EXECROOT install
 
@@ -35,4 +37,4 @@ pkgbuild --identifier $ORGID.pkg.$PROJECT   \
          --root $EXECROOT                   \
          --install-location '/'             \
          --scripts $SCRIPTDIR               \
-         ${PROJECT}.pkg
+         $DISTDIR/$PROJECT.pkg
