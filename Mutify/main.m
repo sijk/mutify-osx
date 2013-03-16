@@ -79,6 +79,12 @@
         if (spotify.soundVolume > 0) {
             volume = spotify.soundVolume;
             spotify.soundVolume = 0;
+
+            // Recent versions of Spotify pause playback if you set the volume
+            // to zero during an ad. If this happens, unpause.
+            usleep(100000);
+            if (spotify.playerState != SpotifyEPlSPlaying)
+                [spotify play];
         }
     } else {
         spotify.soundVolume = volume;
