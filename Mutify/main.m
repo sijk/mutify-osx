@@ -52,6 +52,14 @@
         volume = spotify.soundVolume;
         return;
     }
+    
+    if (spotify.soundVolume == 0 && spotify.playerState == SpotifyEPlSPaused) {
+        // We just found an ad and muted it. Spotify paused itself
+        // as a result. Let's fix that.
+        NSLog(@"Spotify paused after being muted. Unpausing...");
+        [spotify play];
+        return;
+    }
 
     NSString *album  =  [note.userInfo valueForKey:@"Album"];
     int discNum  = (int)[note.userInfo valueForKey:@"Disc Number"];
@@ -62,11 +70,11 @@
     bool isAd = NO;
     if ([album hasPrefix:@"http"]) {
         isAd = YES;
-        NSLog(@"Album prefix = http (%@)", album);
+        NSLog(@"Album prefix = http");
     }
     if ([album hasPrefix:@"spotify"]) {
         isAd = YES;
-        NSLog(@"Album prefix = spotify (%@)", album);
+        NSLog(@"Album prefix = spotify");
     }
     if (trackNum == 0 && discNum == 0) {
         isAd = YES;
@@ -79,12 +87,6 @@
         if (spotify.soundVolume > 0) {
             volume = spotify.soundVolume;
             spotify.soundVolume = 0;
-
-            // Recent versions of Spotify pause playback if you set the volume
-            // to zero during an ad. If this happens, unpause.
-            usleep(100000);
-            if (spotify.playerState != SpotifyEPlSPlaying)
-                [spotify play];
         }
     } else {
         spotify.soundVolume = volume;
