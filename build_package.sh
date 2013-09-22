@@ -27,8 +27,11 @@ su \$USER -c 'cat <<EOPLIST > $AGENT_TARGET
 $AGENT_CONTENT
 EOPLIST'
 
-echo 'Launching agent'
+echo 'Loading agent'
 su \$USER -c 'launchctl load $AGENT_TARGET'
+
+echo 'Restarting Mutify'
+su \$USER -c 'launchctl stop $ORGID.$PROJECT'
 EOF
 
 chmod +x $SCRIPTDIR/postinstall
